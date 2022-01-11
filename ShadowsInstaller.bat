@@ -22,7 +22,7 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 md "C:\Program Files (x86)\ShadowsInstaller"
-curl https://shadowocto.github.io/Installer/Installer.bat> C:\Program Files (x86)\ShadowsInstaller\Installer.bat
+curl https://shadowocto.github.io/Installer/Installer.bat> "C:\Program Files (x86)\ShadowsInstaller\Installer.bat"
 curl https://shadowocto.github.io/Installer/Install.lnk> C:\Windows\System32\Install.lnk
 cls
 color 0a
