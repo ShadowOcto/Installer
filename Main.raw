@@ -53,7 +53,14 @@ if %1==brave (
 powershell -Command "& Invoke-WebRequest -Uri "https://referrals.brave.com/latest/BraveBrowserSetup.exe" -OutFile "C:\temp\BraveBrowserSetup.exe""
 start C:\temp\BraveBrowserSetup.exe
 )
-
+if %1==Firefox (
+powershell -Command "& Invoke-WebRequest -Uri "https://download-installer.cdn.mozilla.net/pub/firefox/releases/96.0/win32/en-GB/Firefox%20Installer.exe" -OutFile "C:\temp\Firefox Installer.exe""
+start C:\temp\Firefox Installer.exe
+)
+if %1==firefox (
+powershell -Command "& Invoke-WebRequest -Uri "https://download-installer.cdn.mozilla.net/pub/firefox/releases/96.0/win32/en-GB/Firefox%20Installer.exe" -OutFile "C:\temp\Firefox Installer.exe""
+start C:\temp\Firefox Installer.exe
+)
 
 color 0c
 cls
