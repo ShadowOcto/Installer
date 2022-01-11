@@ -22,3 +22,4 @@ color 0c
 cls
 echo Error: program not found (Error Code: 1A)
 pause>nul
+Exit
