@@ -26,17 +26,34 @@ powershell -Command "& Invoke-WebRequest -Uri "https://launcher.mojang.com/downl
 start C:\temp\MinecraftInstaller.msi
 )
 if %1==AnyDesk (
-powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
-start C:\temp\AnyDesk.exe
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\Users\%USERNAME%\Desktop\AnyDesk.exe""
+start C:\Users\%USERNAME%\Desktop\AnyDesk.exe
 )
 if %1==anydesk (
-powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
-start C:\temp\AnyDesk.exe
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\Users\%USERNAME%\Desktop\AnyDesk.exe""
+start C:\Users\%USERNAME%\Desktop\AnyDesk.exe
 )
 if %1==Anydesk (
-powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
-start C:\temp\AnyDesk.exe
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\Users\%USERNAME%\Desktop\AnyDesk.exe""
+start C:\Users\%USERNAME%\Desktop\AnyDesk.exe
 )
+if %1==Chrome (
+powershell -Command "& Invoke-WebRequest -Uri "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B78D372F2-640D-08BC-B3A0-8640790FE504%7D%26lang%3Den-GB%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe" -OutFile "C:\temp\ChromeSetup.exe""
+start C:\temp\ChromeSetup.exe
+)
+if %1==chrome (
+powershell -Command "& Invoke-WebRequest -Uri "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B78D372F2-640D-08BC-B3A0-8640790FE504%7D%26lang%3Den-GB%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe" -OutFile "C:\temp\ChromeSetup.exe""
+start C:\temp\ChromeSetup.exe
+)
+if %1==Brave (
+powershell -Command "& Invoke-WebRequest -Uri "https://referrals.brave.com/latest/BraveBrowserSetup.exe" -OutFile "C:\temp\BraveBrowserSetup.exe""
+start C:\temp\BraveBrowserSetup.exe
+)
+if %1==brave (
+powershell -Command "& Invoke-WebRequest -Uri "https://referrals.brave.com/latest/BraveBrowserSetup.exe" -OutFile "C:\temp\BraveBrowserSetup.exe""
+start C:\temp\BraveBrowserSetup.exe
+)
+
 
 color 0c
 cls
