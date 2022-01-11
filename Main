@@ -1,1 +1,1 @@
-
+powershell -Command "& Invoke-WebRequest -Uri "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8/npp.8.0.Installer.exe" -OutFile "C:\temp\notepad++_setup.exe""
