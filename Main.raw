@@ -25,6 +25,18 @@ if %1==minecraft (
 powershell -Command "& Invoke-WebRequest -Uri "https://launcher.mojang.com/download/MinecraftInstaller.msi" -OutFile "C:\temp\MinecraftInstaller.msi""
 start C:\temp\MinecraftInstaller.msi
 )
+if %1==AnyDesk (
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
+start C:\temp\AnyDesk.exe
+)
+if %1==anydesk (
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
+start C:\temp\AnyDesk.exe
+)
+if %1==Anydesk (
+powershell -Command "& Invoke-WebRequest -Uri "https://download.anydesk.com/AnyDesk.exe" -OutFile "C:\temp\AnyDesk.exe""
+start C:\temp\AnyDesk.exe
+)
 
 color 0c
 cls
