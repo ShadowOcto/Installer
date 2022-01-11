@@ -17,6 +17,14 @@ if %1==discord (
 powershell -Command "& Invoke-WebRequest -Uri "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9003/DiscordSetup.exe" -OutFile "C:\temp\DiscordSetup.exe""
 start C:\temp\DiscordSetup.exe
 )
+if %1==Minecraft (
+powershell -Command "& Invoke-WebRequest -Uri "https://launcher.mojang.com/download/MinecraftInstaller.msi" -OutFile "C:\temp\MinecraftInstaller.msi""
+start C:\temp\MinecraftInstaller.msi
+)
+if %1==minecraft (
+powershell -Command "& Invoke-WebRequest -Uri "https://launcher.mojang.com/download/MinecraftInstaller.msi" -OutFile "C:\temp\MinecraftInstaller.msi""
+start C:\temp\MinecraftInstaller.msi
+)
 
 color 0c
 cls
