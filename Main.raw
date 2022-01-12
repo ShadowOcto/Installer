@@ -61,6 +61,14 @@ if %1==firefox (
 powershell -Command "& Invoke-WebRequest -Uri "https://download-installer.cdn.mozilla.net/pub/firefox/releases/96.0/win32/en-GB/Firefox%20Installer.exe" -OutFile "C:\temp\FirefoxInstaller.exe""
 start C:\temp\FirefoxInstaller.exe
 )
+if %1==Steam (
+powershell -Command "& Invoke-WebRequest -Uri "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe" -OutFile "C:\temp\SteamSetu.exe""
+start C:\temp\FirefoxInstaller.exe
+)
+if %1==steam (
+powershell -Command "& Invoke-WebRequest -Uri "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe" -OutFile "C:\temp\SteamSetu.exe""
+start C:\temp\FirefoxInstaller.exe
+)
 
 color 0c
 cls
