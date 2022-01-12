@@ -23,10 +23,10 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 
-del /f C:\temp\*.*
-del /f "C:\Program Files (x86)\ShadowsInstaller\*.*"
-rd C:\temp
-rd "C:\Program Files (x86)\ShadowsInstaller"
+del /f /q /s C:\temp\*.*
+del /f /q /s "C:\Program Files (x86)\ShadowsInstaller\*.*"
+rmdir C:\temp
+rmdir "C:\Program Files (x86)\ShadowsInstaller"
 cls
 color 0a
 echo "The program has been uninstalled!"
